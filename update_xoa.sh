@@ -12,11 +12,12 @@ git checkout .
 xoupdatestatus="$(git pull --ff-only)>/dev/null"
 
 #Exit if there are no updates
-if [[ $xoupdatestatus == *"Already up-to-date"* ]]; then
+if [[ $xoupdatestatus == *"Already up-to-date"* ]]; 
+then
    echo "Xen Orchestra is already up-to-date"
    exit
-      else
-      echo "Updates found"
+else
+   echo "Updates found"
 fi
 
 #Update build dependencies
