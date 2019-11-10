@@ -8,7 +8,7 @@
 cd /opt/xen-orchestra/
 
 #Check for updates to Xen Orchestra
-git checkout .
+git checkout .>/dev/null
 xoupdatestatus="$(git pull --ff-only)>/dev/null"
 
 #Exit if there are no updates
